@@ -17,8 +17,8 @@ public class SequenceController {
 
 
     @PostMapping
-    public ResponseEntity<String> distinctSequence(@RequestBody final DistinctSequenceDTO sequenceDTO){
-        final String output = sequenceService.calculateNumDistinct(sequenceDTO.getValue1(), sequenceDTO.getValue2());
+    public ResponseEntity<Integer> distinctSequence(@RequestBody final DistinctSequenceDTO sequenceDTO){
+        final Integer output = sequenceService.calculateNumDistinct(sequenceDTO);
         return ResponseEntity.status(HttpStatus.OK).body(output);
     }
 
