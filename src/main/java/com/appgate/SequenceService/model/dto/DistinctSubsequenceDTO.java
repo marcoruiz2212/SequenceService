@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class DistinctSequenceDTO {
+public class DistinctSubsequenceDTO {
     @NotBlank(message = "value1 is mandatory")
     private String value1;
     @NotBlank(message = "value2 is mandatory")
