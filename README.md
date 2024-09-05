@@ -5,7 +5,7 @@ Para correr la aplicacion es necesario ejecutar esta clase SequenceServiceApplic
 Cuando la aplicacion este arriba, executar esta cUrl
 
 
-curl --location 'http://localhost:8080/sequence' \
+curl --location 'http://localhost:8080/api/v1/sequences' \
 --header 'Content-Type: application/json' \
 --data '{
 "value1" : "babgbag",
@@ -24,4 +24,4 @@ Ya que se necesita desplegar este microservicio a produccion,
 
 ## Diagram
 
-![img.png](img.png)
+![img_2.png](img_2.png)

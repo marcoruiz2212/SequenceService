@@ -1,15 +1,13 @@
 package com.appgate.SequenceService.service.impl;
 
-import com.appgate.SequenceService.model.dto.DistinctSequenceDTO;
-import com.appgate.SequenceService.service.ISequenceService;
+import com.appgate.SequenceService.model.dto.DistinctSubsequenceDTO;
+import com.appgate.SequenceService.service.ISubsequenceMatcherService;
 import org.springframework.stereotype.Service;
 
-import java.util.Arrays;
-
 @Service
-public class SequenceService implements ISequenceService {
+public class SubsequenceMatcherService implements ISubsequenceMatcherService {
     @Override
-    public int calculateNumDistinct(DistinctSequenceDTO sequenceDTO) {
+    public int calculateNumDistinct(DistinctSubsequenceDTO sequenceDTO) {
         return numDistinct(sequenceDTO.getValue1(),
                 sequenceDTO.getValue2());
     }
