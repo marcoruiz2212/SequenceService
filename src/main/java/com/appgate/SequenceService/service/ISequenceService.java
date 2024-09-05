@@ -1,6 +1,8 @@
 package com.appgate.SequenceService.service;
 
+import com.appgate.SequenceService.model.dto.DistinctSequenceDTO;
+
 public interface ISequenceService {
 
-    String calculateNumDistinct(String value1, String value2);
+    int calculateNumDistinct(DistinctSequenceDTO sequenceDTO);
 }
